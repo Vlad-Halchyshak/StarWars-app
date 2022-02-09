@@ -1,4 +1,5 @@
 import React from 'react'
+
 export const Starships = ({ id }) => {
     const [starship, setStarship] = React.useState({})
 
@@ -7,5 +8,6 @@ export const Starships = ({ id }) => {
             .then((res) => res.json())
             .then((data) => setStarship(data))
     }, [])
+
     return <div>{starship?.name || 'no information'}</div>
 }

@@ -10,13 +10,11 @@ function App() {
             <nav className="header">
                 <div className="items">
                     <Link to="/characters">Characters</Link>
-
                     <Link to="/" style={{ marginLeft: '15px' }}>
                         Home
                     </Link>
                 </div>
             </nav>
-
             <Routes>
                 <Route exact path="/characters" element={<Characters />} />
                 <Route
